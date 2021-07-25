@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Put Shoe for Trade</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="header">
+		<hr>
+		<header>
+			<h1>Authentica</h1>
+				<input type="text" placeholder="Search"><i class="fa fa-search" style="position: absolute; left: 770px;"></i>
+			<nav>
+				<ul class="nav">
+				<li><a href="../index.html" class="a-hover">Home</a></li>
+        		<li><a href="Trade.html" class="a-hover">Trade</a></li>
+        		<li><a href="About Page.html" class="a-hover">About</a></li>
+        		<li><a href="Login.html"><button class="login">Login</button></a></li>
+        		<li><a href="Sing Up.html"><button class="login">SignUp</button></a></li>
+        		<li class="cart"><a href="Cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+				</ul>
+			</nav>
+		</header>
+		<hr>
+	</div>
+
+	<h2 class="trade-add-heading">Add a Shoe to Trade</h2>
+	<div class="trade-add-details">
+		
+		<h4>Add Details About Shoe</h4>
+		<textarea type="text" name="Shoe Details" placeholder="Add Details About Shoe" class="trade-add-details-box"></textarea>
+	</div>
+
+	<div class="trade-add-upload">
+		<input type="file" name="inpFile" id="inpFile" class="trade-upload-btn">
+		<div class="image-preview" id="imagePreview">
+			<img src="" alt="Image Preview" class="image-preview__image">
+			<span class="image-preview__default-text">Image Preview</span>
+		</div>
+	</div>
+	<script type="text/javascript">
+	const inpFile = document.getElementById("inpFile");
+	const previewContainer = document.getElementById("imagePreview");
+	const previewImage = previewContainer.querySelector(".image-preview__image");
+	const previewDefaultText = previewContainer.querySelector(".image-preview__default-text");
+
+	inpFile.addEventListener("change", function (){
+				const file = this.files[0];
+
+				if (file){
+					const reader = new FileReader();
+
+					previewDefaultText.style.display = "none";
+					previewImage.style.display = "block";
+
+					reader.addEventListener("load", function(){
+						console.log(this);
+						previewImage.setAttribute("src", this.result);
+					});
+
+					reader.readAsDataURL(file);
+				} else{
+					previewDefaultText.style.display = null;
+					previewImage.style.display = null;
+				}
+		});
+	
+	</script>
+	<div class="trade-add-person-details">
+		<h3>Add Your Details</h3>
+		<form class="trade-add-form">
+			<p><u>Full Name</u></p>
+			<input type="text" name="Name" placeholder="Full Name" class="trade-add-input">
+			<p><u>Email Address</u></p>
+			<input type="text" name="Email" placeholder="Email" class="trade-add-input">
+			<p><u>Phone Number</u></p>
+			<input type="text" name="Number" placeholder="Phone Number" class="trade-add-input">
+			<p><u>Address</u></p>
+			<input type="text" name="Address" placeholder="Address" class="trade-add-input">
+			<p><u>Additional Information</u></p>
+			<textarea type="text" name="Add Info" placeholder="Additional Info" class="trade-add-textarea"> </textarea>
+		</form>
+	</div>
+	<button type="button" class="trade-add-details-btn">Add Details</button>
+	<footer>
+	<hr>
+		<nav>
+			<ul class="bottom-nav">
+			<li><a href="../Home.html">Home</a></li>
+        	<li><a href="Trade.html">Trade</a></li>
+        	<li><a href="About Page.html">About</a></li>
+		</ul>
+		</nav>
+	<hr>
+	</footer>
+</body>
+</html>

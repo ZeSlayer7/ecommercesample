@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Authentica</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+	<div class="header">
+		<hr>
+		<header>
+			<h1>Authentica</h1>
+        		<input type="text" placeholder="Search"><i class="fa fa-search" style="position: absolute;left: 770px"></i>
+			<nav>
+			<ul class="nav">
+				<li><a href="index.html" class="a-hover">Home</a></li>
+        		<li><a href="pages/Trade.html" class="a-hover">Trade</a></li>
+        		<li><a href="pages/About Page.html" class="a-hover">About</a></li>
+        		<li><a href="pages/Login.html"><button class="login">Login</button></a></li>
+        		<li><a href="pages/Sing Up.html"><button class="login">SignUp</button></a></li>
+        		<li class="cart"><a href="pages/Cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+        	</ul>
+			</nav>
+		</header>
+		<hr>
+	</div>
+	<div class="imgarea">
+		<img src="MainImg.png">
+	</div>
+	<div class="imgtxt">
+		<h2>Authentica</h2>
+		<p class="imgp">Providing you with a large variety of authentic shoes</p>
+		<p>Shop with us in the comfort of your home and feel secure about the quality, authenticy and originality of your shoes. </p>
+	</div>
+	<h3>Designers</h3>
+	<div class="designer-container">
+		<div class="designers"><a href="pages/Nike Page.html"><img src="Nikelogo.jpg"><h4>Nike</h4></a></div>
+		<div class="designers"><a href="pages/Adidas Page.html"><img src="Adidaslogo.jpg"><h4>Adidas</h4></a></div>
+		<div class="designers"><a href="pages/Jordon Page.html"><img src="Jordonlogo.png"><h4>Jordon</h4></a></div>
+		<div class="designers"><a href="pages/Yeezy Page.html"><img src="yeezylogo.png"><h4>Yeezy</h4></a></div>
+		<div class="designers"><a href="pages/New Balance Page.html"><img src="newbalancelogo.jpg"><h4>New Balance</h4></a></div>
+	</div>
+	<h3>Shop by Country of Manufacture</h3>
+	<div class="flag-container">
+		<div class="country"><a href="pages/Germany Page.html"><img src="germany.png"><h4>Germany</h4></a></div>
+		<div class="country"><a href="pages/Italy Page.html"><img src="italy.png"><h4>Italy</h4></a></div>
+		<div class="country"><a href="pages/France Page.html"><img src="france.png"><h4>France</h4></a></div>
+		<div class="country"><a href="pages/UK Page.html"><img src="Uk.png"><h4>United Kingdom</h4></a></div>
+		<div class="country"><a href="pages/USA Page.html"><img src="usa.png"><h4>Usa</h4></a></div>
+	</div>
+	<h3>Wear What They Wore</h3>
+	<div class="celebrity-container">
+		<div class="slides">
+			<input type="radio" name="radio-btn" id="radio1">
+			<input type="radio" name="radio-btn" id="radio2">
+			<input type="radio" name="radio-btn" id="radio3">
+			<input type="radio" name="radio-btn" id="radio4">
+			<input type="radio" name="radio-btn" id="radio5">
+
+				<div class="slide first">
+					<a href="pages/Ronaldo Page.html"><img src="Ronaldo.png"></a>
+				</div>
+			
+				<div class="slide">
+					<a href="pages/Billie Eilish Page.html"><img src="Billie.png"></a>
+				</div>
+
+				<div class="slide">
+					<a href="pages/Migos Page.html"><img src="Migos.png"></a>
+				</div>
+
+				<div class="slide">
+					<a href="pages/Drake Page.html"><img src="Drake.png"></a>
+				</div>
+
+				<div class="slide">
+					<a href="pages/Justin Beiber Page.html"><img src="Justin.png"></a>
+				</div>
+
+			<div class="autonavigation-celeb">
+				<div class="auto-btn1"></div>
+				<div class="auto-btn2"></div>
+				<div class="auto-btn3"></div>
+				<div class="auto-btn4"></div>
+				<div class="auto-btn5"></div>
+			</div>
+		</div>
+			<div class="manualnav-celeb">
+				<label for="radio1" class="manual-btn"></label>
+				<label for="radio2" class="manual-btn"></label>
+				<label for="radio3" class="manual-btn"></label>
+				<label for="radio4" class="manual-btn"></label>
+				<label for="radio5" class="manual-btn"></label>
+			</div>
+	</div>
+	<script type="text/javascript">
+		var counter = 1;
+		setInterval(function(){
+		document.getElementById('radio' + counter).checked = true;
+		counter++;
+		if(counter > 5){
+			counter = 1;
+		}
+		}, 5000);
+	</script>
+	<h3>Popular Now</h3>
+	<div class="popular-container">
+		<div class="popular"><a href="#"><img src="AirJordon1.png"><h4>Air Jordon 1</h4></a></div>
+		<div class="popular"><a href="#"><img src="AirForce1.png"><h4>Air Force 1</h4></a></div>
+		<div class="popular"><a href="#"><img src="Yeezy350.png"><h4>Yeezy 350</h4></a></div>
+		<div class="popular"><a href="#"><img src="UltraBoost 20.png"><h4>UltraBoost 20</h4></a></div>
+		<div class="popular"><a href="#"><img src="Concept1.png"><h4>Niobium Concept 1</h4></a></div>
+	</div>
+	<div class="footer-img">
+		<img src="footer-img.jpg">
+	</div>
+	<div class="footerimg-txt">
+		<h5>The one-stop destination for buying, trading and exploring authentic footwear.</h5>
+		<button><a href="pages/Request Shoe.html">Request A Shoe</a></button>
+	</div>
+	<hr>
+	<footer>
+		<div class="social-menu">
+		<ul>
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+			
+		</div>
+		<hr>
+	</footer>
+
+	</body>
+</html>
